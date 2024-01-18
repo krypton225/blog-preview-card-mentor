@@ -4,3 +4,11 @@ node_modules
 
 /.vscode/*
 !.vscode/settings.json
+
+*.sketch
+*.fig
+*.xd
+
+.DS_Store
+
+.prettierignore
