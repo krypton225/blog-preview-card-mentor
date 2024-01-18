@@ -1,0 +1,58 @@
+{
+    "name": "blog-preview-card-mentor",
+    "version": "1.0.0",
+    "description": "This is just a training for testing Pug JS and SCSS in project.",
+    "main": "index.js",
+    "markdown": "github",
+    "license": "MIT",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://opensource.org/license/mit/"
+        }
+    ],
+    "author": {
+        "name": "Khaled Mohamed",
+        "email": "k.mohamed.11.98@gmail.com",
+        "url": "https://github.com/krypton225"
+    },
+    "contributors": [
+        "Khaled Mohamed"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/krypton225/blog-preview-card-mentor"
+    },
+    "homepage": "https://github.com/krypton225/blog-preview-card-mentor#readme",
+    "scripts": {
+        "dev": "concurrently --prefix-colors=\"cyan,yellow\" \"npm run sass:watch\" \"npm run sass:comp\"",
+        "sass:watch": "sass --no-source-map ./src/index.scss:dist/styles.css --watch",
+        "sass:comp": "sass --no-source-map ./src/index.scss:dist/styles.min.css --watch --style=compressed",
+        "upgrade": "ncu --upgrade",
+        "lint": "npx stylelint ./src/**/*.scss",
+        "cmt": "cz",
+        "tags": "git push repo --tags",
+        "gen:lock": "npm i --package-lock-only"
+    },
+    "keywords": [
+        "Pug JS",
+        "SCSS",
+        "SASS"
+    ],
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "cz-conventional-changelog": "^3.3.0",
+        "pug": "^3.0.2",
+        "pug-cli": "^1.0.0-alpha6",
+        "sass": "^1.69.7",
+        "stylelint": "^16.1.0",
+        "stylelint-config-standard": "^36.0.0",
+        "stylelint-config-standard-scss": "^13.0.0",
+        "stylelint-scss": "^6.0.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
