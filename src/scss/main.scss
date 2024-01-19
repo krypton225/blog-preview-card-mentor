@@ -79,7 +79,14 @@ body {
             margin-top: 1rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.7rem;
+
+            &__img {
+                $one-side: 2.4rem;
+
+                width: $one-side;
+                height: $one-side;
+            }
 
             &__name {
                 font-weight: 800;
