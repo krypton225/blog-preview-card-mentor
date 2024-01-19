@@ -8,40 +8,55 @@ html(lang="en")
         +meta-keywords("HTML, Pug JS, SCSS, CSS, Front End Mentor")
 
         link(rel="stylesheet" href="./dist/styles.min.css")
-        |
-        |
+
+        +line
+
         link(rel="icon" href="./public/assets/images/favicons/favicon.ico")
         link(rel="apple-touch-icon" href="../public/assets/images/favicons/apple-touch-icon.png")
         link(rel="manifest" href="./public/assets/images/favicons/site.webmanifest")
-        |
-        |
+        
+        +line
 
         title Training Task | Front End Mentor
     body 
-        .box
+        section.box
             .box__header 
-                |
+                +line
                 img(src="./public/assets/images/illustration-article.svg" alt="Image header of the box.")
-                |
+
+            +line
 
             .box__content
                 .box__content__badge
+                    +line
                     span Learning
-
+                |
+                |
                 .box__content__date
+                    +line
                     span Published 21 Dec 2023
-
+                |
+                |
                 .box__content__title 
+                    +line
                     span HTML & CSS foundations
-
+                |
+                |
                 p.box__content__description
                     | These languages are the backbone of every website,
                     | defining structure, content, and presentation.
 
+                +line
+
                 .box__content__avatar
                     .box__content__avatar__img 
+                        +line
                         img(src="./public/assets/images/image-avatar.webp" alt="Image avatar of the box.")
-
+                    +line
+                    +line
                     span.box__content__avatar__name
                         | greg hooper
+        
+        |
+        |
         +no-script
